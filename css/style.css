@@ -1,0 +1,31 @@
+body{
+    margin:  0px;
+    padding: 20px;
+    background-color: mistyrose;
+}
+.contenedor{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.caja{
+    background-color: lightblue;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+/*este es para telefono*/
+@media (max-width: 600px){
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
+/*este es para tableta*/
+@media (min-width: 601px) and (max-width: 900px) {
+    .contenedor {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .caja {
+        font-size: 1.5rem;
+    }
+}                                                                                                                                                                                                                                                       
